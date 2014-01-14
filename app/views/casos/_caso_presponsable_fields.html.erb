@@ -1,11 +1,13 @@
-<li><div class='control-group nested-fields'>
+<div class='control-group nested-fields'>
   <div class="controls">
+    <li>
     <%= f.association :presponsable,
-	    label: "Presunto Responsable",
+      label: "Presunto Responsable",
       label_method: :nombre,
       value_method: :id %>
-      <%= f.input :otro %>
+    <%= f.input :otro %>
     <%= link_to_remove_association "Eliminar Presunto Responsable", f, 
-        :class => 'btn-danger' %> 
+      :class => 'btn-danger' %> 
+    </li>
   </div>
-</div></li>
+</div>

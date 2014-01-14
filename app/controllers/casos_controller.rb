@@ -41,6 +41,7 @@ class CasosController < ApplicationController
   # PATCH/PUT /casos/1.json
   def update
     respond_to do |format|
+      @caso.caso_presponsable.clear
       if @caso.update_attributes(caso_params)
         format.html { redirect_to @caso, notice: 'Caso was successfully updated.' }
         format.json { head :no_content }
@@ -71,7 +72,7 @@ class CasosController < ApplicationController
     def caso_params
       params.require(:caso).permit(:fecha, :titulo,
         :caso_presponsable_attributes => [
-          :id, :id_presponsable, :otro, :_destroy
+          :id_presponsable, :otro, :_destroy
         ]
       )
     end
