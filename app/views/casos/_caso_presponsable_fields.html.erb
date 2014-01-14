@@ -1,6 +1,6 @@
-<div class='control-group nested-fields'>
-  <div class="controls">
-    <li>
+<li>
+  <div class='control-group nested-fields'>
+    <div class="controls">
     <%= f.association :presponsable,
       label: "Presunto Responsable",
       label_method: :nombre,
@@ -8,6 +8,6 @@
     <%= f.input :otro %>
     <%= link_to_remove_association "Eliminar Presunto Responsable", f, 
       :class => 'btn-danger' %> 
-    </li>
+    </div>
   </div>
-</div>
+</li>
