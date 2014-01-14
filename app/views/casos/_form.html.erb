@@ -1,0 +1,22 @@
+<%= simple_form_for(@caso) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :fecha %>
+  <%= f.input :titulo%>
+
+  <%= f.simple_fields_for :caso_presponsable do |caso_presponsable| %>
+    <ul>
+      <%= render 'caso_presponsable_fields', :f => caso_presponsable %>
+    </ul>
+  <% end %>
+  <div class="links">
+    <%= link_to_add_association 'Añadir Presunto Responsable', f, 
+      :caso_presponsable, :class => 'btn-primary' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+      casos_path, :class => 'btn' %>
+  </div>
+<% end %>
