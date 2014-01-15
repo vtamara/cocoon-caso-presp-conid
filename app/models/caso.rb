@@ -10,5 +10,4 @@ class Caso < ActiveRecord::Base
       reject_if: :all_blank
     accepts_nested_attributes_for :presponsable,
       reject_if: :all_blank
-
 end
