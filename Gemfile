@@ -50,5 +50,5 @@ gem 'tzinfo'
 gem 'tzinfo-data'
 
 gem 'simple_form'
-gem 'cocoon'
+gem 'cocoon', github: "vtamara/cocoon"
 gem 'debugger'

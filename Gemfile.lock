@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/vtamara/cocoon.git
+  revision: d67b0586da1a31cc75484b61e916eec1d09d1582
+  specs:
+    cocoon (1.2.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,7 +36,6 @@ GEM
     arel (5.0.0)
     atomic (1.1.14)
     builder (3.2.2)
-    cocoon (1.2.5)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -127,7 +132,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cocoon
+  cocoon!
   coffee-rails (~> 4.0.0)
   debugger
   jbuilder (~> 1.2)
