@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   resources :presponsables
 
-  resources :casos
+  get 'casos/nuevopresponsable' => 'casos#nuevopresponsable'
 
+  resources :casos
+  
   root 'casos#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

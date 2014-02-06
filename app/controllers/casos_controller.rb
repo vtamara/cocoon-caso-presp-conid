@@ -15,6 +15,26 @@ class CasosController < ApplicationController
   # GET /casos/new
   def new
     @caso = Caso.new
+    @caso.fecha = DateTime.now.strftime('%Y-%m-%d')
+    @caso.save
+    render action: 'edit'
+  end
+
+  def nuevopresponsable
+    @presponsable = CasoPresponsable.new
+    if !params[:caso_id].nil?
+      @presponsable.id_caso = params[:caso_id]
+      @presponsable.id_presponsable = 1
+      if @presponsable.save
+        respond_to do |format|
+          format.js { render text: @presponsable.id.to_s }
+        end
+        return
+      end
+    end
+    respond_to do |format|
+      format.html { render inline: 'No' }
+    end
   end
 
   # GET /casos/1/edit
@@ -41,7 +61,6 @@ class CasosController < ApplicationController
   # PATCH/PUT /casos/1.json
   def update
     respond_to do |format|
-      @caso.caso_presponsable.clear
       if @caso.update_attributes(caso_params)
         format.html { redirect_to @caso, notice: 'Caso was successfully updated.' }
         format.json { head :no_content }
@@ -55,7 +74,6 @@ class CasosController < ApplicationController
   # DELETE /casos/1
   # DELETE /casos/1.json
   def destroy
-    @caso.caso_presponsable.clear
     @caso.destroy
     respond_to do |format|
       format.html { redirect_to casos_url }
@@ -73,7 +91,7 @@ class CasosController < ApplicationController
     def caso_params
       params.require(:caso).permit(:fecha, :titulo,
         :caso_presponsable_attributes => [
-          :id_presponsable, :otro, :_destroy
+          :id, :id_presponsable, :otro, :_destroy
         ]
       )
     end

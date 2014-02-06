@@ -51,4 +51,4 @@ gem 'tzinfo-data'
 
 gem 'simple_form'
 gem 'cocoon'
-
+gem 'debugger'
