@@ -14,27 +14,26 @@
 ActiveRecord::Schema.define(version: 20140113174538) do
 
   create_table "caso", force: true do |t|
-    t.string   "titulo",            limit: 50
-    t.date     "fecha",             null: false
+    t.string   "titulo",     limit: 50
+    t.date     "fecha",                 null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-
   create_table "caso_presponsable", force: true do |t|
-    t.integer  "id_caso", null: false
-    t.integer  "id_presponsable", null: false
+    t.integer  "id_caso",                     null: false
+    t.integer  "id_presponsable",             null: false
     t.string   "otro",            limit: 500
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "caso_presponsable", ["id"], name: "caso_presponsable_id_key", unique: true
   add_index "caso_presponsable", ["id_caso", "id_presponsable"], name: "index_caso_presponsable_on_caso_id_and_presponsable_id", unique: true
   add_index "caso_presponsable", ["id_presponsable", "id_caso"], name: "index_caso_presponsable_on_presponsable_id_and_caso_id", unique: true
-  add_index "caso_presponsable", ["id"], name: "caso_presponsable_id_key", unique: true, using: :btree
 
   create_table "presponsable", force: true do |t|
-    t.string   "nombre",               limit: 500, null: false
+    t.string   "nombre",     limit: 500, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
