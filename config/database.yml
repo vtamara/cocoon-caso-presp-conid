@@ -2,10 +2,10 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  host: /var/www/tmp
+#  host: /var/www/tmp
   encoding: unicode
-  username: cocoon_cp
-  password: cocoon_cp
+#  username: cocoon_cp
+#  password: cocoon_cp
 
 
 development:
