@@ -24,4 +24,4 @@ Una vez descargue ejecutar con:
 	rails s
 
 Y examine http://127.0.0.1:3000
-	
+
