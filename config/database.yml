@@ -4,7 +4,6 @@ default: &default
   timeout: 5000
   encoding: unicode
 
-
 # Desarrollo en adJ
 development:
   <<: *default
@@ -26,3 +25,4 @@ test:
 production:
   <<: *default
   database: cocoon_cpsi_prod
+
