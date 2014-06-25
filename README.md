@@ -8,7 +8,7 @@ y simple_form, donde hay modelos anidados (Caso y Presponsable) y la tabla
 que relaciona (Caso_Presponsable) no tiene llave primaria.
 
 Puede veral operando en:
-http://cocoon-caso-presponsable-sin-i.herokuapp.com/
+  http://cocoon-caso-presponsable-sin-i.herokuapp.com/
 
 Ver contexto, explicación y comparación con otro caso en:
 http://dhobsd.pasosdejesus.org/index.php?id=Formularios+Anidados+en+Rails+con+Cocoon
@@ -20,9 +20,9 @@ permitir:
 
 Una vez descargue ejecutar con:
 
-	sudo bundle install
+	```sudo bundle install
 	rake db:setup
-	rails s
+	rails s'''
 
 Y examine http://127.0.0.1:3000
 
