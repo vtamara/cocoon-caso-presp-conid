@@ -8,4 +8,6 @@ es:
       presponsable:
         Presponsable: Presunto Responsable
         Presponsables: Presuntos Responsables
-
+  helpers:
+    links:
+      cancel: Cancela
