@@ -3,9 +3,9 @@ cocoon-caso-presp-sinid
 
 Formularios anidados sin llave primaria en tabla que relaciona.
 
-Ejemplo de una aplicación sobre Ruby on Rails 4.1 Beta, cocoon y simple_form, 
+Ejemplo de una aplicación sobre Ruby on Rails 4.1, cocoon 1.2.6 y simple_form, 
 donde hay modelos anidados (Caso y Presponsable) y la tabla que relaciona 
-(Caso_Presponsable) no tiene llave primaria (id).  
+(Caso_Presponsable) no tiene llave primaria.
 
 Ver contexto, explicación y comparación con otro caso en:
 http://dhobsd.pasosdejesus.org/index.php?id=Formularios+Anidados+en+Rails+con+Cocoon

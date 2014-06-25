@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PresponsablesControllerTest < ActionController::TestCase
   setup do
-    @presponsable = presponsables(:one)
+    @presponsable = presponsable(:one)
   end
 
   test "should get index" do
