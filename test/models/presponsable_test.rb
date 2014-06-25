@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class PresponsableTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "debe tener nombre" do
+    p = Presponsable.new
+    assert_not p.save, "salvar presponsable sin nombre"
+  end
 end

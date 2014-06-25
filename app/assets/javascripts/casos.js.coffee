@@ -4,3 +4,16 @@
 #
 
 //= require cocoon
+
+$ ->
+  $(document).on('change', 'select', (e) ->
+    $('form').submit(); 
+  )
+  $(document).on('change', 'input', (e) ->
+    $('form').submit(); 
+  )
+ $(document).on('cocoon:after-remove', '', (e, p) ->
+    $('form').submit(); 
+    $('.control-group[style*="display: none"]').remove()
+  )
+

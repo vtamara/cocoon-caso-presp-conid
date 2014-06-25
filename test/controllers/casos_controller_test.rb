@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CasosControllerTest < ActionController::TestCase
   setup do
-    @caso = casos(:one)
+    @caso = caso(:one)
   end
 
   test "should get index" do

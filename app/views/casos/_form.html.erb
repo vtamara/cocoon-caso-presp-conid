@@ -1,4 +1,4 @@
-<%= simple_form_for(@caso) do |f| %>
+<%= simple_form_for(@caso, remote: true) do |f| %>
   <div id="errores">
     <%= f.error_notification %>
   </div>
@@ -11,15 +11,11 @@
   <%= f.simple_fields_for :caso_presponsable do |caso_presponsable| %>
       <%= render 'caso_presponsable_fields', :f => caso_presponsable %>
   <% end %>
+    <div class="links">
+      <%= link_to_add_association 'Añadir Presunto Responsable', f, 
+        :caso_presponsable, {:class => 'btn-primary', 
+          "data-ajax" => "/casos/nuevopresponsable", 
+          "data-ajaxdata" => "caso_id", "count" => "2" } %>
+    </div>
   </ul>
-  <div class="links">
-    <%= link_to_add_association 'Añadir Presunto Responsable', f, 
-      :caso_presponsable, {:class => 'btn-primary', "data-ajax" => "/casos/nuevopresponsable", "data-ajaxdata" => "caso_id", "count" => "2" } %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, :class => 'btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-      casos_path, :class => 'btn' %>
-  </div>
 <% end %>

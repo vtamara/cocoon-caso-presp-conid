@@ -64,6 +64,7 @@ class CasosController < ApplicationController
       if @caso.update_attributes(caso_params)
         format.html { redirect_to @caso, notice: 'Caso was successfully updated.' }
         format.json { head :no_content }
+        format.js   { render :nothing => true }
       else
         format.html { render action: 'edit' }
         format.json { render json: @caso.errors, status: :unprocessable_entity }

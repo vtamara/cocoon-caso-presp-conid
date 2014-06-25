@@ -1,4 +1,4 @@
-<h1>Listing presponsables</h1>
+<h1>Listando presponsables</h1>
 
 <table>
   <thead>
@@ -12,9 +12,9 @@
     <% @presponsables.each do |presponsable| %>
       <tr>
         <td><%= presponsable.nombre %></td>
-        <td><%= link_to 'Show', presponsable %></td>
-        <td><%= link_to 'Edit', edit_presponsable_path(presponsable) %></td>
-        <td><%= link_to 'Destroy', presponsable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', presponsable %></td>
+        <td><%= link_to 'Editar', edit_presponsable_path(presponsable) %></td>
+        <td><%= link_to 'Eliminar', presponsable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Presponsable', new_presponsable_path %>
+<%= link_to 'Nuevo Presponsable', new_presponsable_path %>

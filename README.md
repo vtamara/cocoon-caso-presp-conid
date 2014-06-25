@@ -3,11 +3,11 @@ cocoon-caso-presp-sinid
 
 Modelos anidados con llave primaria (id) en tabla que relaciona.
 
-Ejemplo de una aplicación sobre Ruby on Rails 4.1 Beta, cocoon y simple_form, 
-donde hay modelos anidados (Caso y Presponsable) y la tabla que relaciona 
-(Caso_Presponsable) tiene llave primaria (id).  
+Ejemplo de una aplicación sobre Ruby on Rails 4.1, cocoon 1.2.6 modificado
+para usar AJAX y simple_form, donde hay modelos anidados (Caso y Presponsable) 
+y la tabla que relaciona (Caso_Presponsable) tiene llave primaria (id).  
 
-Ver contexto, explicación y comparación con otro caso en:
+Ver contexto y dos métodos de hacerlo sin AJAX en:
 http://dhobsd.pasosdejesus.org/index.php?id=Modelos+Anidados+en+Rails+con+Cocoon
 
 También es ejemplo de como sobrepasar algunas de las convenciones de RoR para
