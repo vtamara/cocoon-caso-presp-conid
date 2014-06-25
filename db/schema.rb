@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20140113174538) do
     t.datetime "updated_at"
   end
 
-  add_index "caso_presponsable", ["id"], name: "caso_presponsable_id_key", unique: true
   add_index "caso_presponsable", ["id_caso", "id_presponsable"], name: "index_caso_presponsable_on_caso_id_and_presponsable_id", unique: true
   add_index "caso_presponsable", ["id_presponsable", "id_caso"], name: "index_caso_presponsable_on_presponsable_id_and_caso_id", unique: true
 
