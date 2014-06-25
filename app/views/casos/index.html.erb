@@ -1,4 +1,4 @@
-<h1>Listing casos</h1>
+<h1>Listando casos</h1>
 
 <table>
   <thead>
@@ -12,9 +12,9 @@
     <% @casos.each do |caso| %>
       <tr>
         <td><%= caso.fecha %></td>
-        <td><%= link_to 'Show', caso %></td>
-        <td><%= link_to 'Edit', edit_caso_path(caso) %></td>
-        <td><%= link_to 'Destroy', caso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', caso %></td>
+        <td><%= link_to 'Editar', edit_caso_path(caso) %></td>
+        <td><%= link_to 'Eliminar', caso, method: :delete, data: { confirm: 'Seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Caso', new_caso_path %>
+<%= link_to 'Nuevo Caso', new_caso_path %>

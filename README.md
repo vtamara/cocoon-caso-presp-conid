@@ -5,8 +5,8 @@ cocoon-caso-presp
 
 Formularios anidados con llave primaria (id) en tabla que relaciona.
 
-Ejemplo de una aplicación sobre Ruby on Rails 4.1, cocoon 1.2.6 y 
-simple_form, donde hay modelos anidados (Caso y Presponsable) y la tabla 
+Ejemplo de una aplicación en español sobre Ruby on Rails 4.1, cocoon 1.2.6, y
+simple_form  donde hay modelos anidados (Caso y Presponsable) y la tabla 
 que relaciona (Caso_Presponsable) tiene llave primaria (id).  
 
 Ver contexto, explicación y comparación con otro caso en:
