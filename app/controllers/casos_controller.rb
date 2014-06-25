@@ -4,6 +4,7 @@ class CasosController < ApplicationController
   # GET /casos
   # GET /casos.json
   def index
+		puts "OJO index"
     @casos = Caso.all
   end
 
