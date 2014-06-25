@@ -3,9 +3,10 @@ cocoon-caso-presp-ajax
 
 Modelos anidados con llave primaria (id) en tabla que relaciona usando AJAX.
 
-Ejemplo de una aplicación sobre Ruby on Rails 4.1, cocoon 1.2.6 modificado
-para usar AJAX y simple_form, donde hay modelos anidados (Caso y Presponsable) 
-y la tabla que relaciona (Caso_Presponsable) tiene llave primaria (id).  
+Ejemplo de una aplicación en español sobre Ruby on Rails 4.1, cocoon 1.2.6 
+modificado para usar AJAX y simple_form, donde hay modelos anidados 
+(Caso y Presponsable) y la tabla que relaciona (Caso_Presponsable) tiene 
+llave primaria (id).  
 
 Ver aplicación operando en
 http://cocoon-caso-presponsable-ajax.herokuapp.co/
