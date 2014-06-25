@@ -4,8 +4,6 @@ class CasosController < ApplicationController
   # GET /casos
   # GET /casos.json
   def index
-		puts "OJO index"
-		Rails.logger.warn("Look at me, I'm a warning")
     @casos = Caso.all
   end
 
