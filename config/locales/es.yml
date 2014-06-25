@@ -1,0 +1,11 @@
+es:
+  attributes:
+    created_at: Fecha Creación
+  activerecord:
+    attributes:
+      caso:
+        fecha: Fecha
+      presponsable:
+        Presponsable: Presunto Responsable
+        Presponsables: Presuntos Responsables
+

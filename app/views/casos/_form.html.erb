@@ -5,14 +5,14 @@
   <%= f.input :titulo%>
 
   <ul>
-  <%= f.simple_fields_for :caso_presponsable do |caso_presponsable| %>
+    <%= f.simple_fields_for :caso_presponsable do |caso_presponsable| %>
       <%= render 'caso_presponsable_fields', :f => caso_presponsable %>
-  <% end %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association 'Añadir Presunto Responsable', f, 
+        :caso_presponsable, :class => 'btn-primary' %>
+    </div>
   </ul>
-  <div class="links">
-    <%= link_to_add_association 'Añadir Presunto Responsable', f, 
-      :caso_presponsable, :class => 'btn-primary' %>
-  </div>
 
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
