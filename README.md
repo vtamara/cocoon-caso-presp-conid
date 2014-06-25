@@ -9,6 +9,9 @@ Ejemplo de una aplicación en español sobre Ruby on Rails 4.1, cocoon 1.2.6, y
 simple_form  donde hay modelos anidados (Caso y Presponsable) y la tabla 
 que relaciona (Caso_Presponsable) tiene llave primaria (id).  
 
+Veala operando en: 
+http://cocoon-caso-presponsable.herokuapp.com/
+
 Ver contexto, explicación y comparación con otro caso en:
 http://dhobsd.pasosdejesus.org/index.php?id=Formularios+Anidados+en+Rails+con+Cocoon
 
