@@ -13,7 +13,7 @@ Veala operando en:
 http://cocoon-caso-presponsable.herokuapp.com/
 
 Ver contexto, explicación y comparación con otro caso en:
-http://dhobsd.pasosdejesus.org/Formularios_Anidados_en_Rails_con_Cocoon.html
+<http://dhobsd.pasosdejesus.org/formularios_anidados_en_rails_con_cocoon.html>
 
 También es ejemplo de como sobrepasar algunas de las convenciones de RoR para
 permitir:
