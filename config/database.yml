@@ -7,7 +7,7 @@ default: &default
 
 development:
   <<: *default
-  host: /var/www/tmp
+  host: /var/www/var/run/postgresql/
   username: cocoon_cp
   password: cocoon_cp
   database: cocoon_cp_dev
@@ -17,7 +17,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  host: /var/www/tmp
+  host: /var/www/var/run/postgresql/
   username: cocoon_cp
   password: cocoon_cp
   database: cocoon_cp_test
